@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5B2B1C1D58A22A004A3F36 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5B2B1B1D58A22A004A3F36 /* Launch Screen.storyboard */; };
 		0B80DB071D5853FE0064A08A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B80DB061D5853FE0064A08A /* main.m */; };
 		0B80DB0A1D5853FE0064A08A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B80DB091D5853FE0064A08A /* AppDelegate.m */; };
 		0B80DB0D1D5853FE0064A08A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B80DB0C1D5853FE0064A08A /* ViewController.m */; };
 		0B80DB101D5853FE0064A08A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B80DB0E1D5853FE0064A08A /* Main.storyboard */; };
 		0B80DB121D5853FE0064A08A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B80DB111D5853FE0064A08A /* Assets.xcassets */; };
-		0B80DB151D5853FE0064A08A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B80DB131D5853FE0064A08A /* LaunchScreen.storyboard */; };
 		0B80DB201D5853FF0064A08A /* CQSwitchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B80DB1F1D5853FF0064A08A /* CQSwitchUITests.m */; };
 		0B80DB2C1D5854170064A08A /* CQSwitchControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B80DB2B1D5854170064A08A /* CQSwitchControl.m */; };
 /* End PBXBuildFile section */
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5B2B1B1D58A22A004A3F36 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		0B80DB021D5853FE0064A08A /* CQSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CQSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B80DB061D5853FE0064A08A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B80DB081D5853FE0064A08A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		0B80DB0C1D5853FE0064A08A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B80DB0F1D5853FE0064A08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B80DB111D5853FE0064A08A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B80DB141D5853FE0064A08A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B80DB161D5853FE0064A08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B80DB1B1D5853FF0064A08A /* CQSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CQSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B80DB1F1D5853FF0064A08A /* CQSwitchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CQSwitchUITests.m; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				0B80DB2B1D5854170064A08A /* CQSwitchControl.m */,
 				0B80DB0E1D5853FE0064A08A /* Main.storyboard */,
 				0B80DB111D5853FE0064A08A /* Assets.xcassets */,
-				0B80DB131D5853FE0064A08A /* LaunchScreen.storyboard */,
+				0B5B2B1B1D58A22A004A3F36 /* Launch Screen.storyboard */,
 				0B80DB161D5853FE0064A08A /* Info.plist */,
 				0B80DB051D5853FE0064A08A /* Supporting Files */,
 			);
@@ -196,8 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B80DB151D5853FE0064A08A /* LaunchScreen.storyboard in Resources */,
 				0B80DB121D5853FE0064A08A /* Assets.xcassets in Resources */,
+				0B5B2B1C1D58A22A004A3F36 /* Launch Screen.storyboard in Resources */,
 				0B80DB101D5853FE0064A08A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,14 +248,6 @@
 				0B80DB0F1D5853FE0064A08A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0B80DB131D5853FE0064A08A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B80DB141D5853FE0064A08A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

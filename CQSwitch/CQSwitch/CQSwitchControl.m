@@ -2,16 +2,25 @@
 //  CQSwitchControl.m
 //  CQSwitch
 //
-//  Created by chenq@kensence.com on 16/8/8.
-//  Copyright © 2016年 chenq@kensence.com. All rights reserved.
+//  Created by chenq@kensence.com on 15/8/8.
+//  Copyright © 2015年 chenq@kensence.com. All rights reserved.
 //
 
 #import "CQSwitchControl.h"
 
 @interface CQSwitchControl ()
 {
+   
+    //CQSwitch的整体图片
     UIImageView *ImageView;
+    /**
+     *  中间按钮的图片 ,可以为空
+     */
     UIImageView *tapImage;
+    
+    /**
+     *  显示开关的label
+     */
     UILabel *label;
 }
 
@@ -37,7 +46,7 @@
         UIImage *image = self.OnImage;
         image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         ImageView.image = self.OnImage;
-        ImageView.layer.cornerRadius = 16;
+        ImageView.layer.cornerRadius = 15;
         ImageView.layer.masksToBounds = YES;
         ImageView.layer.borderColor = [UIColor blackColor].CGColor;
         ImageView.layer.borderWidth = 0.2;
@@ -49,7 +58,7 @@
       
         label = [[UILabel alloc]init];
         label.frame = CGRectMake(frame.size.width - 32, 0 ,32,32);
-        label.text = @"关";
+        label.text = self.SwitchOFFText;
         [self addSubview:label];
     
         tapImage = [[UIImageView alloc]init];
@@ -66,6 +75,11 @@
             tapImage.backgroundColor = self.TapBackColor;
         }
         self.isOn = NO;
+        
+       
+        /**
+         *  如果想为中间的按钮添加图片,可以在这里修改
+         */
         
         UIImage *tapimage = [UIImage imageNamed:@"Switch-OF"];
         tapimage = [tapimage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -94,7 +108,7 @@
         tapImage.image = tapimage;
         [tapImage setFrame:CGRectMake(ImageView.frame.size.width - 34,ImageView.frame.origin.y-1, 34, 34)];
         [label setFrame:CGRectMake(ImageView.frame.origin.x + 10 ,ImageView.frame.origin.y, 32, 32)];
-        label.text = @"开";
+        label.text = self.SwichOnText;
         [UIView commitAnimations];
     
     }else
@@ -109,7 +123,7 @@
         tapImage.image = tapimage;
         [tapImage setFrame:CGRectMake((ImageView.frame.origin.x),ImageView.frame.origin.y-1, 34,34)];
         [label setFrame:CGRectMake(ImageView.frame.size.width - 34,ImageView.frame.origin.y, 32, 32)];
-        label.text = @"关";
+        label.text = self.SwitchOFFText;
         [UIView commitAnimations];
         ImageView.backgroundColor = self.OffColor;
     }

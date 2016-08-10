@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  CQSwitch
 //
-//  Created by chenq@kensence.com on 16/8/8.
-//  Copyright © 2016年 chenq@kensence.com. All rights reserved.
+//  Created by chenq@kensence.com on 15/8/8.
+//  Copyright © 2015年 chenq@kensence.com. All rights reserved.
 //
 
 #import "AppDelegate.h"
